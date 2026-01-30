@@ -2,9 +2,11 @@ package main
 
 import (
 	"encoding/base64"
+	"encoding/csv"
 	"encoding/json"
 	"flag"
 	"fmt"
+	"io"
 	"net/http"
 	"regexp"
 	"strconv"
@@ -13,7 +15,6 @@ import (
 	"github.com/mrvcoder/V2rayCollector/collector"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/jszwec/csvutil"
 	"github.com/projectdiscovery/gologger"
 	"github.com/projectdiscovery/gologger/levels"
 )
@@ -54,9 +55,52 @@ func main() {
 	flag.Parse()
 
 	fileData, err := collector.ReadFileContent("channels.csv")
+	if err != nil {
+		gologger.Fatal().Msg("error reading file: " + err.Error())
+	}
+	
+	// Parse tab-separated CSV
 	var channels []ChannelsType
-	if err = csvutil.Unmarshal([]byte(fileData), &channels); err != nil {
-		gologger.Fatal().Msg("error: " + err.Error())
+	reader := csv.NewReader(strings.NewReader(fileData))
+	reader.Comma = '\t' // Set tab as delimiter
+	reader.TrimLeadingSpace = true
+	reader.LazyQuotes = true // Be more lenient with quotes
+	
+	// Read header
+	header, err := reader.Read()
+	if err != nil {
+		gologger.Fatal().Msg("error reading CSV header: " + err.Error())
+	}
+	
+	// Validate header
+	if len(header) < 2 {
+		gologger.Fatal().Msg("invalid CSV format: expected at least 2 columns")
+	}
+	
+	// Read all records
+	for {
+		record, err := reader.Read()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			gologger.Fatal().Msg("error reading CSV record: " + err.Error())
+		}
+		
+		if len(record) < 2 {
+			continue
+		}
+		
+		// Parse AllMessagesFlag
+		allMessages := false
+		if strings.ToUpper(strings.TrimSpace(record[1])) == "TRUE" {
+			allMessages = true
+		}
+		
+		channels = append(channels, ChannelsType{
+			URL:             strings.TrimSpace(record[0]),
+			AllMessagesFlag: allMessages,
+		})
 	}
 
 	for _, channel := range channels {
@@ -209,7 +253,6 @@ func EditVmessPs(config string, fileName string, channelName string) string {
 	return "vmess://" + base64.StdEncoding.EncodeToString(jsonData)
 }
 
-// ... Keep HttpRequest, loadMore, and GetMessages functions from your original file ...
 func loadMore(link string) *goquery.Document {
 	req, _ := http.NewRequest("GET", link, nil)
 	resp, _ := client.Do(req)
