@@ -59,7 +59,7 @@ trojan://telegram-id-privatevpns@18.195.108.52:22222?security=tls&alpn=http/1.1&
 trojan://telegram-id-privatevpns@18.194.65.60:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-396
 trojan://telegram-id-privatevpns@18.192.246.137:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-395
 trojan://telegram-id-privatevpns@18.185.207.189:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#Hope_Net-394
-trojan://telegram-id-privatevpns@15.237.164.159:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-393
+trojan://telegram-id-privatevpns@18.158.213.255:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-393
 trojan://telegram-id-privatevpns@15.236.88.17:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-392
 trojan://telegram-id-privatevpns@15.236.182.0:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-391
 trojan://telegram-id-privatevpns@15.236.135.143:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#PrivateVPNs-390
@@ -135,7 +135,7 @@ trojan://telegram-id-directvpn@18.195.71.56:22223?security=tls&alpn=http/1.1&hea
 trojan://telegram-id-directvpn@18.195.108.52:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-320
 trojan://telegram-id-directvpn@18.194.65.60:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-319
 trojan://telegram-id-directvpn@18.192.246.137:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-318
-trojan://telegram-id-directvpn@15.237.164.159:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-317
+trojan://telegram-id-directvpn@18.158.213.255:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-317
 trojan://telegram-id-directvpn@15.236.88.17:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-316
 trojan://telegram-id-directvpn@15.236.182.0:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-315
 trojan://telegram-id-directvpn@15.236.135.143:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#DirectVPN-314
