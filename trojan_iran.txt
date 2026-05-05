@@ -500,7 +500,7 @@ trojan://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@mfa.gov.ua:443?allowInsecure=1&fp=
 trojan://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.877774.xyz:443?allowInsecure=1&fp=firefox&host=vless.lrdxw.club&path=%2F&sni=vless.lrdxw.club&type=ws#oneclickvpnkeys-33
 trojan://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.130519.xyz:443?allowInsecure=1&fp=firefox&host=vless.lrdxw.club&path=%2F&sni=vless.lrdxw.club&type=ws#oneclickvpnkeys-32
 trojan://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cdns.doon.eu.org:443?allowInsecure=1&fp=firefox&host=vless.lrdxw.club&path=%2F&sni=vless.lrdxw.club&type=ws#oneclickvpnkeys-31
-trojan://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@172.64.145.202:443?allowInsecure=1&fp=firefox&host=vless.lrdxw.club&path=%2F&sni=vless.lrdxw.club&type=ws#oneclickvpnkeys-30
+trojan://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@104.18.41.190:443?allowInsecure=1&fp=firefox&host=vless.lrdxw.club&path=%2F&sni=vless.lrdxw.club&type=ws#oneclickvpnkeys-30
 trojan://5b4becce-5739-483f-97ec-68b81a855d68@naiu-sg.05vr9nyqg5.download:13030?security=tls&sni=cloudflare.node-ssl.cdn-alibaba.com&type=tcp&headerType=none#mftizi-29
 trojan://5b4becce-5739-483f-97ec-68b81a855d68@naiu-other.05vr9nyqg5.download:13036?security=tls&sni=cloudflare.node-ssl.cdn-alibaba.com&type=tcp&headerType=none#mftizi-28
 trojan://5b4becce-5739-483f-97ec-68b81a855d68@naiu-jp.05vr9nyqg5.download:13013?security=tls&sni=cloudflare.node-ssl.cdn-alibaba.com&type=tcp&headerType=none#mftizi-27
